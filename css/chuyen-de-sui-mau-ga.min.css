@@ -1,0 +1,675 @@
+
+
+.header{
+    width: 700px;
+    margin: var(--margin-auto);
+    box-sizing: border-box;
+}
+
+.header__title{
+    background-color: #038291;
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-20);
+    color: var(--color-white);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.banner,
+.sick,
+.information,
+.complication,
+.harm,
+.virus,
+.infection,
+.time,
+.contact,
+.footer,
+.treatment{
+    width: 700px;
+    margin: var(--margin-auto);
+    display: var(--display-block);
+    box-sizing: border-box;
+}
+
+.banner > img{
+    width: 100%;
+    height: auto;
+}
+
+.sick__container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: var(--background-color-white);
+    text-align: center;
+}
+
+.sick__container-item{
+    background-color: var(--background-color-white);
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-700);
+    padding: 10px;
+    color: var(--color-black);
+    border: 2px solid #038291;
+}
+
+.sick__container-item-active {
+    background-color: #038291;
+    color: var(--color-white);
+}
+
+.sick__body,
+.harm__body{
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.sick__body-card,
+.harm__body-text{
+    border-left: 2px dashed;
+    border-bottom: 2px dashed;
+    border-right: 2px dashed;
+    border-color: #038291;
+    box-sizing: border-box;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-400);
+    line-height: 22px;
+}
+
+.sick__body-card > strong {
+    color: #038291;
+}
+
+.information__tile,
+.complication__tile,
+.harm__tile,
+.virus__title,
+.infection__title,
+.contact__title{
+    padding: 10px;
+    background-color: #038291;
+    color: var(--color-white);
+    text-align: center;
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-700);
+    margin-top: 10px;
+    will-change: transform;
+}
+
+.information__body,
+.information__thongtin
+{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.information__body-title,
+.information__body-bottom{
+    display: var(--display-flex);
+    gap: 10px;
+}
+
+
+
+.information__body-right >  strong {
+    font-size: var(--font-size-18);
+    color: #038291;
+    text-transform: uppercase;
+}
+
+
+
+.information__body-right-text-li{
+    transform: translate(10px , 0px);
+    line-height: 23px;
+    will-change: transform;
+}
+
+.information__body-right-text strong{
+    line-height: 25px;
+}
+
+.information__bacsi{
+    text-align: center;
+    padding: 10px   ;
+}
+.information__bacsi > img {
+    width: 100%;
+    height: auto;
+}
+
+.information__thongtin-body{
+    padding: 10px;
+    border: 2px dashed;
+    border-color: #038291;
+    border-radius: 8px;
+}
+
+.information__thongtin-text {
+    text-align: center;
+}
+
+.information__thongtin-hr{
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    justify-content: var(--justify-content-center) ;
+    margin-top: 10px;
+}
+
+.information__thongtin-hr > span {
+    width: 200px;
+    height: 2px;
+    background-color: #038291;
+    border: 0px;
+}
+
+.information__thongtin-bs {
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-700);
+    text-align: center;
+    color: #038291;
+    margin-top: 15px;
+    will-change: transform;
+}
+
+.complication__body
+{
+    padding: 10px;
+    text-align: justify;
+}
+
+.complication__img{
+    padding: 10px;
+    text-align: center;
+}
+.complication__img  img{
+    width: 100%;
+    height: auto;
+}
+
+/* hình ảnh gây shock */
+.blurred {
+    filter: blur(5px);
+    transition: filter 0.5s;
+}
+.view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #666;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 383px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.view_button {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 10px;
+    border: none;
+}
+.hidden {
+    display: none;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.hiden_img {
+    position: relative;
+}
+
+.virus__list{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+    background-color: var(--background-color-white);
+    text-align: center;
+    padding: 10px;
+}
+
+.virus__item{
+    box-shadow: 2px 2px 10px 0px #00000026;
+    border: 2px solid #038291;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 85px;
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    justify-content: var(--justify-content-center);
+}
+
+/* slider */
+#slider{
+    position: relative;
+    display: var(--display-flex);
+    /* height: 500px; */
+    align-items: var(--align-item-center);
+    justify-content: var(--justify-content-center);
+    background: #F5F5F5;
+
+}
+.slide_show{
+    width: var(--width-100);
+   overflow: hidden;
+   position: relative;
+}
+.list_image {
+    display: flex;
+    transition: 1s;
+    height: 100%;
+    width: 100%;
+}
+
+.list_image_card {
+    flex: 0 0 100%; /* Keep 100% width */
+    max-width: 100%; /* Limit max width */
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px 6%;
+    text-align: center;
+}
+
+
+.list_image_card-text { 
+    padding: 0px 12%;
+    color: var(--color-black);
+    line-height: 30px;
+    font-size: var(--font-size-16);
+    text-align: center;
+
+}
+.list_image_card-text-title{
+    font-weight: var(--font-weight-700);
+}
+.list_image_card-text span {
+    font-weight: var(--font-weight-400);
+}
+.btn:hover{
+    color: var(--color-white);
+}
+
+.btn{
+    position: absolute;
+    top: 55%;
+    color: #999;
+    transform: translateY(-50%);
+    transition: 1s;
+}
+.btn-left{
+    left: 10px;
+    cursor: var(--cursor-pointer);
+}
+.btn-right{
+    right: 10px;
+    cursor: var(--cursor-pointer);
+}
+
+.time{
+    text-align: center;
+    min-height: 115px;
+}
+
+.time  img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #038291; /* Border của thẻ chính */
+}
+
+.contact__body {
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px 0px ;
+    font-size: var(--font-size-16);
+    line-height: 25px;
+}
+.contact__body a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.footer{
+    position: relative;
+}
+
+.footer > img{
+    width: 100%;
+    height: auto;
+}
+
+.footer__body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--width-100);
+}
+
+.footer__body-top{
+    width: 100%;
+    height: 115px;
+    display: var(--display-flex);
+}
+
+.footer__body-top > a{
+    display: var(--display-block);
+    width: 33%;
+    height: 115px;
+}
+
+.footer__body-botom{
+    width: 100%;
+    height: 70px;
+}
+.footer__body-botom> a{
+    height: 70px;
+    width: 100%;
+    display: var(--display-block);
+}
+
+.sick__body{
+    min-height: 200px;
+}
+
+.sick__body-card {
+    width: 100%; /* Hoặc chiều rộng cố định */
+    min-height: 200px; /* Đảm bảo không thay đổi chiều cao */
+}
+
+.treatment a {
+    display: var(--display-block);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.treatment img {
+    width: 480px;
+    height: 169px;
+    margin-top: 10px;
+    border: 1px solid #038291;
+}
+
+.banner__button{
+    display: var(--display-flex);
+    align-items: var(--align-item-center);
+    justify-content: var(--justify-content-center);
+    margin: 10px 0px;
+}
+
+.box {
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: var(--font-size-18);
+    display: grid;
+    place-content: center;
+    color: white;
+    text-shadow: 0 1px 0 #000;
+    --border-angle: 0turn;
+    --main-bg: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%
+    );
+    border: solid 5px transparent;
+    border-radius: 2em;
+    --gradient-border: conic-gradient(
+      from var(--border-angle),
+      transparent 25%,
+      #08f,
+      #f03 99%,
+      transparent
+    );
+    background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+    background-position: center center;
+    -webkit-animation: bg-spin 3s linear infinite;
+            animation: bg-spin 3s linear infinite;
+  }
+  @-webkit-keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  .box:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
+  
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+
+  /* ping */
+ .ping-wrapper {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 115px;
+  }
+
+  .ping-border {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 11px;
+  }
+
+  .ping-layer {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Đặt vào giữa và bắt đầu từ kích thước 0 */
+    opacity: 0; /* Bắt đầu không nhìn thấy */
+    pointer-events: none; /* Đảm bảo pseudo-elements không can thiệp vào các tương tác */
+    animation: pingLayer 2s infinite;
+  }
+
+  @keyframes pingLayer {
+    0% {
+      transform: translate(-50%, -50%) scale(0); /* Bắt đầu với kích thước 0 */
+      opacity: 1; /* Bắt đầu với độ mờ 1 */
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1); /* Mở rộng */
+      opacity: 0; /* Biến mất khi mở rộng */
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0); /* Quay lại kích thước 0 */
+      opacity: 0; /* Đảm bảo không còn nhìn thấy khi kết thúc */
+    }
+  }
+
+  .content-placeholder,
+  .body-placeholder {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .content-placeholder.loaded,
+  .body-placeholder.loaded {
+    opacity: 1;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .header,
+    .banner,
+    .sick,
+    .information,
+    .complication,
+    .harm,
+    .virus,
+    .infection,
+    .time,
+    .contact,
+    .footer,
+    .treatment{
+        width: var(--width-100) !important;
+    }
+
+    .sick__container-item,
+    .information__tile,
+    .complication__tile,
+    .harm__tile,
+    .infection__title,
+    .virus__title,
+    .contact__title{
+        font-size: var(--font-size-18) !important;
+    }
+
+    .complication__img img {
+        height: 226px !important;
+    }
+
+    .view {
+        text-align: center !important;
+        height: 226px !important;
+    }
+    .view_button {
+        top: 72% !important;
+    }
+
+    .contact__body{
+        font-size: var(--font-size-14) !important;
+        width: 95% !important;
+    }
+
+    .footer__body-top{
+        height: 60px !important;
+    }
+    .footer__body-top > a{
+        height: 60px !important;
+    }
+    .footer__body-botom{
+        height: 39px !important;
+    }
+    .footer__body-botom> a{
+        height: 39px !important;
+    }
+
+    .sick__body{
+        min-height: 330px !important;
+    }
+    
+
+    .treatment img{
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .sick__body-card {
+        min-height: 330px !important;
+    }
+}
+
+.footer_list_icon1 {
+    position: fixed;
+    top: 34%;
+    right: 10px !important;
+    z-index: 100;
+}
+.footer_icon_zalo {
+    position: relative;
+}
+.footer_icon_mess {
+    position: relative;
+}
+.footer_list_icon_number {
+    position: absolute;
+    top: -37px;
+    right: -5px;
+    background-color: red;
+    padding: 2px 4px;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 700;
+}
+.footer_list_icon_number1 {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    background-color: red;
+    padding: 2px 4px;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 700;
+}
+.ping {
+    background-color: #82d2df;
+    position: absolute;
+    top: -60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: -24px;
+    -webkit-animation: ping 2s ease-in-out infinite backwards;
+    animation: ping 2s ease-in-out infinite backwards;
+}
+@-webkit-keyframes ping {
+    0% {
+        -webkit-transform: scale(0.2);
+        transform: scale(0.2);
+        opacity: 0.8;
+    }
+    80% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(2.2);
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
+@keyframes ping {
+    0% {
+        -webkit-transform: scale(0.2);
+        transform: scale(0.2);
+        opacity: 0.8;
+    }
+    80% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(2.2);
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
