@@ -1,0 +1,105 @@
+.header_mobile_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 10000;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.header_mobile_container-body {
+    position: relative;
+}
+
+.header_mobile_bottom {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* transform: translate(0px, 50px); */
+    border-bottom: 1px solid var(--color-131A85);
+
+    
+}
+.header_mobile_bottom_left {
+    width: 50%;
+    padding: 10px 0;
+}
+.header_mobile_bottom_left > a > img {
+    width: 100%;
+    height: auto;
+}
+.header_mobile_bottom_right {
+    width: 50%;
+}
+.header_mobile_bottom_right_card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header_mobile_bottom_right_card {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-131A85);
+    border-radius: 25px;
+    height: 40px;
+    gap: 3px;
+}
+.header_mobile_bottom_right_card_left {
+    background-color: var(--background-color-131A85);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -0.7px;
+}
+.header_mobile_bottom_right_card_left > img {
+    width: 30px;
+    height: 30px;
+}
+.header_mobile_bottom_right_card_right > h5 {
+    font-weight: var(--font-weight-700);
+    color: var(--color-131A85);
+    font-size: var(--font-size-14);
+    font-style: italic;
+}
+.header_mobile_bottom_right_card_right > span {
+    font-weight: var(--font-weight-700);
+    color: #EB0000;
+    font-size: var(--font-size-14);
+}
+
+.header__mobile-list{
+     width: 100%;
+     box-sizing: border-box;
+     transform: translate(0px, -5px);
+  }
+
+  .header__mobile-list > ul {
+    width: var(--width-100);
+    list-style: none;
+    display: var(--display-flex);
+    border: 1px solid var(--color-131A85);
+    border-left: 0px;
+    box-sizing: border-box;
+  }
+
+  .header__mobile-list > ul > li {
+    width: 20%;
+    font-size: var(--font-size-10);
+    font-weight: var(--font-weight-700);
+    color: var(--color-131A85);
+    text-transform: capitalize;
+    padding: 5px;
+    box-sizing: border-box;
+    border-left: 1px solid var(--color-131A85);
+    background-color: var(--background-color-E7F4FF);
+    text-align: center;
+  }
+
+  .header__mobile-list > ul > li:hover{
+    background-color: var(--background-color-C1D9FF);
+    transition: all .5s;
+  }

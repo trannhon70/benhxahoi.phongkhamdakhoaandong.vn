@@ -1,0 +1,36 @@
+
+.vision__mobile-body{
+    padding: 10px !important;
+}
+
+.vision__mobile-body-title{
+    font-size: var(--font-size-18);
+    color: var(--color-131A85);
+    font-weight:var(--font-weight-700) ;
+    text-transform: capitalize;
+    text-align: var(--center);
+}
+
+.vision__mobile-body > p {
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-400);
+    line-height: 21px;
+    text-align: justify;
+}
+
+.facilities__mobile {
+    padding: 0px 10px ;
+}
+
+.facilities__mobile-list{
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.facilities__mobile-list-item{
+    padding: 5px;
+    width: 50%;
+    box-sizing: border-box;
+}

@@ -1,0 +1,181 @@
+
+#header__mobile,
+#header,
+#vision,
+#vision__mobile,
+#facilities,
+#facilities__mobile{
+    display: none;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  #header,
+  #vision,
+  #facilities{
+    display: block !important;
+  }
+  
+}
+
+@media only screen and (max-width: 999px) {
+   #header__mobile,
+   #vision__mobile,
+   #facilities__mobile{
+    display: block !important;
+   }
+}
+
+@media only screen and (max-width: 999px) {
+    .team{
+        transform: translate(0px, -5px) !important; 
+    }
+    .team__container,
+    .process,
+    .customer {
+        width: var(--width-100) !important;
+    }
+
+    .team__body {
+        flex-wrap: wrap !important;
+        padding: 0px 10px !important;
+    }
+
+    .team__body-item-tile{
+        font-size: var(--font-size-20) !important;
+    }
+
+    .equipment__body{
+        width: var(--width-100) !important;
+        box-sizing: border-box !important;
+    }
+    .equipment__carousel-prev> img ,
+    .equipment__carousel-next > img{
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .equipment__carousel-list { 
+        overflow: hidden !important;
+    }
+
+    .equipment__carousel-list-item-body{
+        width: 85% !important;
+        height: auto !important;
+        transform: translate(0px, 25px) !important;
+    }
+
+    .equipment__carousel-list-item-body > strong{
+        font-size: var(--font-size-16) !important;
+    }
+    .equipment__carousel-list-item-body > p {
+        font-size: var(--font-size-14) !important;
+        line-height: 21px !important;
+    }
+    .front{
+        width: var(--width-100) !important;
+        transform: translate(0, 0) !important;
+    }
+    .process__row{
+        padding: 0px 10px !important;
+    }
+    .process__row-item{
+        width: 45% !important;
+        padding: 10px !important;
+        height: 150px !important;
+        border-radius: 10px !important;
+    }
+
+    .process__row-item > strong{
+         font-size: var(--font-size-16) !important;
+         overflow: hidden !important;
+    }
+
+    .process__row-item > div > img{
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .process__row-img > img {
+        width: 65% !important;
+        height: auto !important;
+    }
+
+    .customer {
+        padding: 0px 10px !important;
+        box-sizing: border-box !important;
+    }
+    
+    .customer_row-right-list-active{
+        flex-wrap: wrap !important;
+    }
+
+    .customer_row-right-list-item {
+        width: var(--width-100) !important;
+        margin-top: 10px !important;
+    }
+    .category{
+        width: var(--width-100) !important;
+    }
+
+    .category__right{
+        width: var(--width-100) !important;
+    }
+
+    .img-responsive {
+        width: 100% !important;
+        height: 225px !important;
+    }
+    .img-gif {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 8px !important;
+    }
+    #bai-viet{
+        padding: 0px 10px !important;
+    }
+
+    .danhmuc__menu{
+        box-sizing: border-box !important;
+    }
+
+    .comment{
+        width: var(--width-100) !important;
+    }
+    .quantam, .comment__body{
+        width: var(--width-100) !important;
+        padding: 0px 10px !important;
+        box-sizing: border-box !important;
+    }
+    .comment__body-form-div {
+     gap: 10px !important;
+    }
+
+    .modal__footer{
+        left: 0% !important;
+        top: 15% !important;
+        transform: translate(0px, 0px) !important;
+        margin: 7% !important;
+    }
+    .team{
+        width: var(--width-100) !important;
+        padding: 0px 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    .team__img > img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .view {
+        text-align: center !important;
+        width: 100% !important;
+        height: 226px !important;
+    }
+    .view_button {
+        top: 72% !important;
+    }
+
+    .custom-h2-style{
+        font-size: 18px !important;
+    }
+}

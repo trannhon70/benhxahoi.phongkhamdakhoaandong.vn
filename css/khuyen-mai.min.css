@@ -1,0 +1,590 @@
+
+.endow{
+    background-image: url(../images/background/bg_uu_dai.webp);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0px;
+}
+
+.endow__container{
+    width: var(--container);
+    margin: var(--margin-auto);
+    text-align: var(--center);
+}
+
+.endow__container-top{
+    width: 850px;
+    height: auto;
+    padding: 10px;
+    border: 3px solid var(--color-131A85);
+    border-radius: 200px;
+    margin: var(--margin-auto);
+    padding: 10px 80px;
+    box-sizing: border-box;
+    font-size: var(--font-size-16);
+}
+
+.endow__container-row{
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    justify-content: var(--justify-content-center);
+    gap: 80px;
+}
+
+.endow__container-pagi{
+    margin-top: 10px;
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    justify-content: var(--justify-content-center);
+    gap: 10px;
+}
+
+.endow__container-pagi-itemMB,
+.endow__container-pagi-item{
+    background-color: #739DFF;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.endow__container-pagi-itemMB-active,
+.endow__container-pagi-item-active{
+    width: 50px;
+    height: 20px;
+    background-color: #041892;
+    border-radius: 50px;
+}
+
+.endow_1{
+    background-image: url(../images/khuyen_mai/bg_1.webp);
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.team{
+    background-image: url(../images/khuyen_mai/bg_2.webp);
+    width: 100%;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.clinic__container-body,
+.team__container{
+    width: var(--container);
+    margin: var(--margin-auto);
+    text-align: var(--center);
+    padding: 10px 0px;
+}
+
+.team__container-title{
+    color: var(--color-black);
+    padding: 10px 0px;
+    line-height: 20px;
+}
+
+.team__container-body {
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+}
+
+.team__container-body-left {
+    width: 50px;
+}
+
+.team__container-body-left-item {
+    width: 20px;
+    height: 20px;
+    background-color: #739DFF;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.team__container-body-left-item-active{
+    width: 20px;
+    height: 50px;
+    background-color: #041892;
+    border-radius: 50px;
+}
+
+.clinic{
+    position: var(--position-relative);
+}
+
+.clinic__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clinic__container{
+    position: var(--position-absolute);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.clinic__container-bottom{
+    position: var(--position-absolute);
+    bottom: 15px;
+    right: 20%;
+}
+
+.consultation{
+    background-image: url(../images/khuyen_mai/bg_3.webp);
+    width: 100%;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: translate(0px , -10px);
+}
+
+.consultation__container{
+    width: var(--container);
+    margin: var(--margin-auto);
+    text-align: var(--center);
+}
+
+.consultation__container-img{
+    width: 100%;
+    height: auto;
+    transform: translate(0px, -20px);
+}
+
+.consultation__container-row {
+    display: var(--display-flex);   
+    transform: translate(0px, -20px);
+    position: var(--position-relative);
+}
+
+.consultation__container-row-left{
+    width: 60%;
+}
+
+.consultation__container-row-left-body{
+    border: 3px solid #FF7E00;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFE9CC 100%);
+    width: 600px;
+    height: 350px;
+    border-radius: 50px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
+
+.consultation__container-row-left-body-title{
+    color: var(--color-black);
+    text-align: var(--center);
+    font-size: var(--font-size-16);
+}
+
+.consultation__container-row-right{
+    position: var(--position-absolute);
+    top: -45px;
+    right: 0;
+}
+
+.consultation__container-row-left-body-input input {
+    width: 100%;
+    height: 65px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 4px 0px #C1D9FF inset;
+    border-radius: 50px;
+    outline: none;
+    font-size: var(--font-size-20);
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border: #739DFF;
+    margin-top: 20px;
+}
+
+.consultation__container-row-left-body-button {
+    margin-top: 20px;
+    display: block;
+}
+
+.consultation__container-row-left-body-button > img {
+    cursor: pointer;
+    width: 254px;
+    height: 50px;
+}
+
+.address{
+    border: 2px solid #FF7E00;
+    background: #FFFFFF;
+    transform: translate(0px, -10px);
+}
+
+.address__container{
+    width: var(--container);
+    margin: var(--margin-auto);
+    display: var(--display-flex);
+    gap: 10px;
+}
+
+.address__container-item{
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    font-size: var(--font-size-18);
+    
+}
+
+.address__container-item strong {
+    line-height: 27px;
+}
+
+.map{
+    transform: translate(0px, -10px);
+    position: var(--position-relative);
+
+}
+
+
+.map__container{
+    width: 100%;
+    position: var(--position-absolute);
+    bottom: -5px;
+    left: 0;
+}
+
+.map__container-body{
+    width: var(--container);
+    margin: var(--margin-auto);
+}
+
+.method{
+    background-image: url(../images/background/bg_uu_dai.webp);
+    width: 100%;
+   min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+.method__container{
+    width: var(--container);
+    margin: var(--margin-auto);
+    text-align: var(--center);
+}
+
+.method__container-list {
+    margin-top: 10px;
+}
+
+.method__container-img{
+    width: 100%;
+}
+.endow__container-row-left{
+    width: 50%;
+}
+
+.endow__container-row-left > img {
+    width: 75%;
+}
+
+.method__container-list-item{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.method__container-list-item-active{
+    display: block;
+    opacity: 1;
+}
+
+.method__container-pagi{
+    margin-top: 10px;
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    justify-content: var(--justify-content-center);
+    gap: 10px;
+}
+
+.method__container-pagi-item{
+    background-color: #739DFF;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.method__container-pagi-item-active{
+    width: 50px;
+    height: 20px;
+    background-color: #041892;
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .clinic__container-body > img {
+        width: 600px;
+        height: auto;
+    }
+  }
+  .map,
+  .address,
+  .addressMB,
+  .consultation,
+  .consultationMB,
+  .clinicMB,
+  .clinic,
+  .teamMB,
+  .team,
+  .endow__container-rowPC,
+  .endow__container-rowMB{
+    display: none;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .map,
+    .address,
+    .consultation,
+    .clinic,
+    .team,
+    .endow__container-rowPC{
+        display: block;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    .addressMB,
+    .consultationMB,
+    .clinicMB,
+    .teamMB,
+    .endow__container-rowMB{
+        display: block;
+    }
+    .endow__container{
+        width: 100%;
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }
+    .endow__container-top{
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: var(--font-size-12);
+    }
+
+    .endow__container-img > img{
+        width: 100%;
+    }
+
+    .endow__container-row-item {
+        display: none ;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .endow__container-row-item-active {
+        display: block ;
+        opacity: 1;
+    }
+    .endow_1{
+        height: 100px;
+    }
+
+    .teamMB{
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }
+    .teamMB__title{
+        text-align: var(--center);
+        color: var(--color-black);
+        font-size: var(--font-size-14);
+        line-height: 18px;
+    }
+    .teamMB__card{
+        margin-top: 10px;
+    }
+
+    .teamMB__card-body{
+        margin-top: 10px;
+        color: var(--color-black);
+        font-size: var(--font-size-14);
+    }
+
+    .teamMB__card-body-icon{
+        display: var(--display-flex);
+        align-items: var(--align-items-center);
+        gap: 5px;
+        font-size: var(--font-size-16);
+        font-weight: var(--font-weight-700);
+        text-transform: uppercase;
+    }
+
+    .clinicMB{
+        background-image: url(../images/khuyen_mai/bg_clinic.webp);
+        width: 100%;
+        min-height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .clinicMB_flex{
+        width: 100%;
+        display: var(--display-flex);
+        align-items: var(--align-items-center);
+        justify-content: var(--justify-content-center);
+        gap: 10px;
+        box-sizing: border-box;
+        margin-top: 5px;
+    }
+    
+    .clinicMB_flex > img {
+        object-fit: cover;
+    }
+
+    .consultationMB{
+        background-image: url(../images/khuyen_mai/bg_tuvan.webp);
+        width: 100%;
+        min-height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .consultationMB__img{
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .consultationMB__img > img {
+        object-fit: fill;
+    }
+
+    .consultation__container-row-left-body{
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        padding: 10px 10px;
+    }
+
+    .consultation__container-row-left-body-input input{
+        height: 40px;
+        margin-top: 10px;
+        padding: 10px 15px;
+    }
+
+    .consultation__container-row-left-body-button{
+        margin-top: 10px;
+        text-align: var(--center);
+    }
+
+    .addressMB__container{
+
+    }
+    .addressMB{
+        border: 2px solid #FF7E00;
+        background: #FFFFFF;
+        padding: 10px;
+        box-sizing: border-box;
+        position: var(--position-relative);
+    }
+    .address__container-item{
+        font-size: var(--font-size-14);
+    }
+
+    .addressMB__img{
+        position: var(--position-absolute);
+        right: 0;
+        bottom: 0;
+    }
+
+    .endow__container-top{
+        display: none;
+    }
+    .method__container{
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .method__container-img,
+    .method__container{
+        width: 100%;
+    }
+  }
+
+  /* css toast */
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+  /* Toast message */
+.toast {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    min-width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    animation: slideIn 0.5s, fadeOut 0.5s 2.5s forwards;
+}
+
+/* Toast success */
+.toast.success {
+    background-color: #0d630f;
+}
+
+/* Toast error */
+.toast.error {
+    background-color: #f44336;
+}
+
+/* Toast warning */
+.toast.warning {
+    background-color: #ff9800;
+}
+
+/* Toast info */
+.toast.info {
+    background-color: #1570bb;
+}
+
+/* Toast icon (optional) */
+.toast-icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}

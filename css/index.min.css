@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-display: optional;
+    font-family: "Google Sans", sans-serif;
+    text-decoration: none !important;
+}
+:root {
+    --max-width: 1920px;
+    --container: 1000px;
+    --width-100: 100%;
+    
+   
+    --color-white: white;
+    --color-black: black;
+    --color-131A85: #131A85;
+    --color-104D6D: #104D6D;
+    
+    --background-color-white: white;
+    --background-color-black: black;
+    --background-color-131A85: #131A85;
+    --background-color-3E75CC: #3E75CC;
+    --background-color-E7F4FF: #E7F4FF;
+    --background-color-C1D9FF: #C1D9FF;
+
+    --font-size-10: 10px;
+    --font-size-12: 12px;
+    --font-size-14: 14px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-20: 20px;
+    --font-size-22: 22px;
+    --font-size-24: 24px;
+    --font-size-26: 26px;
+    --font-size-28: 28px;
+    --font-size-32: 32px;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+
+    --margin-auto: 0 auto;
+
+    /* display */
+    --display-flex: flex;
+    --display-block: block;
+    --center: center;
+    --text-left: left;
+
+    --justify-content-center: center;
+    --align-items-center: center;
+
+    /* position */
+    --position-absolute: absolute;
+    --position-relative: relative;
+
+
+}
+
+body {
+    margin: var(--margin-auto);
+    width: var(--width-100);
+    height: auto;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden !important;
+    max-width: var(--max-width);
+}
+
+.icon__list{
+    position: fixed;
+    top: 20%;
+    right: 0;
+    z-index: 1000;
+}
+
+.icon__list-item{
+    margin-top: 5px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    background: #3E75CC;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 60px;
+    height: 50px;
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    justify-content: var(--justify-content-center);
+    
+}
+.icon__list-item > img {
+    animation: shake 1s ease-in-out infinite; 
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg); /* Vị trí ban đầu */
+    }
+    25% {
+        transform: rotate(15deg); /* Xoay qua phải */
+    }
+    50% {
+        transform: rotate(-15deg); /* Xoay qua trái */
+    }
+    75% {
+        transform: rotate(10deg); /* Xoay qua phải nhẹ hơn */
+    }
+    100% {
+        transform: rotate(0deg); /* Trở lại vị trí ban đầu */
+    }
+}
+
+.icon__list-item1{
+    margin-top: 5px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    background: #131A85;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 60px;
+    height: 50px;
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    justify-content: var(--justify-content-center);
+    position: var(--position-relative);
+}
+
+.icon__list-item2{
+    margin-top: 5px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    background: #3E75CC;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 60px;
+    height: 50px;
+    display: var(--display-flex);
+    align-items: var(--align-items-center);
+    justify-content: var(--justify-content-center);
+}
+
+.randum__number{
+    position: var(--position-absolute);
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: var(--color-white);
+    border-radius: 50%;
+    font-size: var(--font-size-12);
+    padding: 4px;
+}
+
+.modal__footer {
+    position: fixed;
+    z-index: 10000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    
+}
+
+.modal__footer-content {
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.close {
+    color: red;
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+
+.body-placeholder,
+.footer__mobile {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.body-placeholder.loaded ,
+.footer__mobile.loaded{
+  opacity: 1;
+}

@@ -1,0 +1,35 @@
+
+
+.team{
+    max-width: var(--container);
+    margin: var(--margin-auto);
+}
+.team__container{
+    margin-top: 10px;
+}
+.team__title{
+    font-size: var(--font-size-18);
+    color: var(--color-104D6D);
+    font-weight: var(--font-weight-700);
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+.team__bs{
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-700);
+    color: brown;
+    text-transform: uppercase;
+}
+
+.team__text{
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-700);
+    color: var(--color-black);
+    margin-top: 5px;
+}
+
+.team__img{
+    text-align: center;
+    margin-top: 5px;
+}

@@ -1,0 +1,16 @@
+.technical{
+    max-width: var(--container);
+    margin: var(--margin-auto);
+}
+
+.technical_title{
+    font-size: var(--font-size-18);
+    color: var(--color-104D6D);
+    font-weight: var(--font-weight-700);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.technical_tb{
+    margin-top: 15px;
+}

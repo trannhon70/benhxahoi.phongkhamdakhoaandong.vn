@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Rewrite for trang-chu.html
+RewriteRule ^trang-chu\.html$ index.php [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)\.html$ danh-muc.php?tintuc=$1 [L]
+
+
+
