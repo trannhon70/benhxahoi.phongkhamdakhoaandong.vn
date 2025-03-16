@@ -3,8 +3,8 @@ ob_start("ob_gzhandler");
 header("Timing-Allow-Origin: *");
 header("Cache-Control: public, max-age=31536000, must-revalidate");
 
-// $local = 'http://localhost/_andong/benhxahoi.phongkhamdakhoaandong.vn';
-$local = 'https://benhxahoi.phongkhamdakhoaandong.vn';
+$local = 'http://localhost/_andong/benhxahoi.phongkhamdakhoaandong.vn';
+// $local = 'https://benhxahoi.phongkhamdakhoaandong.vn';
 ?>
 <!DOCTYPE html>
 <html ⚡ lang="en">
@@ -87,6 +87,24 @@ $slides = [
 
     <section class="banner">
         <img loading="lazy" src="<?php echo $local ?>/images/sui_mau_ga/banner/banner.webp" alt="...">
+    </section>
+    <section class="cardbs" >
+        <div class="cardbs__body" >
+            <div class="cardbs__body-left" >
+            <img loading="lazy" width="100%" src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_bs.webp" alt="...">
+            </div>
+            <div class="cardbs__body-right" >
+                <div class="cardbs__body-right-bs">
+                    BS Võ Minh Nguyễn
+                </div>
+                <div class="cardbs__body-right-ck">
+                    Chuyên khoa ngoại
+                </div>
+                <div class="cardbs__body-right-ct">
+                   Từng công tác tại Bệnh viện Đa khoa Sainpaul Hà Nội
+                </div>
+            </div>
+        </div>
     </section>
     <section class="banner">
         <div class="banner__button">

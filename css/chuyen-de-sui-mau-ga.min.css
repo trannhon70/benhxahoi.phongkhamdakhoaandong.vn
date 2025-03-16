@@ -26,7 +26,8 @@
 .time,
 .contact,
 .footer,
-.treatment{
+.treatment,
+.cardbs{
     width: 700px;
     margin: var(--margin-auto);
     display: var(--display-block);
@@ -523,6 +524,57 @@
     opacity: 1;
   }
 
+  .cardbs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .cardbs__body{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.35);
+    border-top: 1px solid #eee;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    width: 370px;
+    max-width: 100%;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 10px;
+  }
+  .cardbs__body-left{
+    width: 30%;
+  }
+
+  .cardbs__body-left > img {
+    border: 1px solid #999;
+    border-radius: 50%;
+    width: 100%;
+  }
+
+  .cardbs__body-right{
+    width: 70%;
+  }
+
+  .cardbs__body-right-bs{
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .cardbs__body-right-ck{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 7px;
+  }
+
+  .cardbs__body-right-ct{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 7px;
+    line-height: 20px;
+  }
   @media only screen and (max-width: 600px) {
     .header,
     .banner,
@@ -535,7 +587,8 @@
     .time,
     .contact,
     .footer,
-    .treatment{
+    .treatment,
+    .cardbs{
         width: var(--width-100) !important;
     }
 
@@ -583,7 +636,10 @@
         min-height: 330px !important;
     }
     
-
+    .cardbs{
+        padding: 10px;
+        
+    }
     .treatment img{
         width: 100% !important;
         height: auto !important;
