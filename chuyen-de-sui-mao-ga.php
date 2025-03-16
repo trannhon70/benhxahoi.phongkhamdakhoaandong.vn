@@ -3,8 +3,8 @@ ob_start("ob_gzhandler");
 header("Timing-Allow-Origin: *");
 header("Cache-Control: public, max-age=31536000, must-revalidate");
 
-$local = 'http://localhost/_andong/benhxahoi.phongkhamdakhoaandong.vn';
-// $local = 'https://benhxahoi.phongkhamdakhoaandong.vn';
+// $local = 'http://localhost/_andong/benhxahoi.phongkhamdakhoaandong.vn';
+$local = 'https://benhxahoi.phongkhamdakhoaandong.vn';
 ?>
 <!DOCTYPE html>
 <html ⚡ lang="en">
@@ -101,7 +101,7 @@ $slides = [
                     Chuyên khoa ngoại
                 </div>
                 <div class="cardbs__body-right-ct">
-                   Từng công tác tại Bệnh viện Đa khoa Sainpaul Hà Nội
+                   Từng công tác tại Bệnh viện Đa khoa Sainpaul Hà Nội <a href="#bs" >xem thêm...</a>
                 </div>
             </div>
         </div>
@@ -265,13 +265,13 @@ $slides = [
             <img loading="lazy" src="<?php echo $local ?>/images/sui_mau_ga/banner/tu_van.webp" alt="bác sĩ">
         </div>
     </section>
-    <section class="banner">
+    <section id="bs" class="banner">
         <div class="banner__button">
             <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">đặt lịch tại đây</a>
         </div>
     </section>
-    <section class="information">
-        <h2 class="information__tile ">THÔNG TIN BÁC SĨ</h2>
+    <section  class="information">
+        <h2 class="information__tile ">GIỚI THIỆU BÁC SĨ VÕ MINH NGUYỄN</h2>
     </section>
     <section class="information">
         <div class="information__body">
