@@ -202,7 +202,7 @@ setcookie(
   
 
 
-<!-- <script>
+<script>
     // Chỉ tải Google Analytics khi người dùng cuộn xuống
     document.addEventListener('scroll', function loadGA() {
         console.log('Người dùng cuộn xuống - Tải Google Analytics');
@@ -210,7 +210,7 @@ setcookie(
         // Tạo thẻ script
         var g = document.createElement('script'),
             s = document.scripts[0];
-        g.src = 'https://www.googletagmanager.com/gtag/js?id=G-XWJ4VGC40M';
+        g.src = 'https://www.googletagmanager.com/gtag/js?id=G-TQC7WML3PS';
         g.async = true;
         s.parentNode.insertBefore(g, s);
 
@@ -219,10 +219,12 @@ setcookie(
             window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
-            gtag('config', 'G-XWJ4VGC40M');
+            gtag('config', 'G-TQC7WML3PS');
         };
 
         // Xóa sự kiện lắng nghe để không tải lại
         document.removeEventListener('scroll', loadGA);
     });
-</script> -->
+</script>
+
+
