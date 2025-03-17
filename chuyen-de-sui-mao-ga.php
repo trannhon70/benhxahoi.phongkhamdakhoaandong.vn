@@ -116,7 +116,7 @@ $slides = [
     </section>
     <section class="sick">
         <div class="sick__container">
-            <div class="sick__container-item sick__container-item-active ">Sùi Màu Gà </div>
+            <div class="sick__container-item sick__container-item-active ">Sùi Màu Gà Là gì </div>
             
         </div>
     </section>
@@ -135,7 +135,7 @@ $slides = [
         </a>
     </section>
 
-    <section class="information">
+    <!-- <section class="information">
         <div class="information__bacsi">
             <img loading="lazy" src="<?php echo $local ?>/images/sui_mau_ga/banner/bac_si1.webp" alt="bác sĩ">
         </div>
@@ -144,7 +144,7 @@ $slides = [
         <div class="banner__button">
             <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">đặt lịch khám ngay</a>
         </div>
-    </section>
+    </section> -->
     <section class="complication">
         <div class="complication__tile">
             BIỂU HIỆN VÀ BIẾN CHỨNG
@@ -156,7 +156,7 @@ $slides = [
             Nổi các nốt sần, gai thịt mềm tại âm đạo, môi lớn, môi bé, cổ tử cung (nữ); Lỗ sáo, quy đầu, bao quy đầu, thân dương vật (nam); Vùng hậu môn hoặc miệng, họng.
         </div>
         <div class="complication__img ">
-            <div class="shock_img">
+            <div >
                 <img class="" loading="lazy" src="<?php echo $local ?>/images/sui_mau_ga/banner/sui_mau_ga.webp" alt="bác sĩ">
             </div>
         </div>
