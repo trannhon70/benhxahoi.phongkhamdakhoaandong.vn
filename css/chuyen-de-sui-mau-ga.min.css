@@ -43,7 +43,7 @@ html {
 
 .sick__container{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto     ;
     background-color: var(--background-color-white);
     text-align: center;
 }
@@ -64,7 +64,7 @@ html {
 
 .sick__body,
 .harm__body{
-    padding: 0px 10px;
+    
     box-sizing: border-box;
 }
 

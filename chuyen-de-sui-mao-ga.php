@@ -24,29 +24,32 @@ $local = 'https://benhxahoi.phongkhamdakhoaandong.vn';
         <link rel="stylesheet" href="css/chuyen-de-sui-mau-ga.min.css">
     </noscript>
     <script>
-    // Chỉ tải Google Analytics khi người dùng cuộn xuống
-    document.addEventListener('scroll', function loadGA() {
-        console.log('Người dùng cuộn xuống - Tải Google Analytics');
-        
-        // Tạo thẻ script
-        var g = document.createElement('script'),
-            s = document.scripts[0];
-        g.src = 'https://www.googletagmanager.com/gtag/js?id=G-TQC7WML3PS';
-        g.async = true;
-        s.parentNode.insertBefore(g, s);
+        // Chỉ tải Google Analytics khi người dùng cuộn xuống
+        document.addEventListener('scroll', function loadGA() {
+            console.log('Người dùng cuộn xuống - Tải Google Analytics');
 
-        // Cấu hình gtag
-        g.onload = function () {
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'G-TQC7WML3PS');
-        };
+            // Tạo thẻ script
+            var g = document.createElement('script'),
+                s = document.scripts[0];
+            g.src = 'https://www.googletagmanager.com/gtag/js?id=G-TQC7WML3PS';
+            g.async = true;
+            s.parentNode.insertBefore(g, s);
 
-        // Xóa sự kiện lắng nghe để không tải lại
-        document.removeEventListener('scroll', loadGA);
-    });
-</script>
+            // Cấu hình gtag
+            g.onload = function() {
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'G-TQC7WML3PS');
+            };
+
+            // Xóa sự kiện lắng nghe để không tải lại
+            document.removeEventListener('scroll', loadGA);
+        });
+    </script>
 </head>
 <?php
 $slides = [
@@ -88,12 +91,12 @@ $slides = [
     <section class="banner">
         <img loading="lazy" src="<?php echo $local ?>/images/sui_mau_ga/banner/banner.webp" alt="...">
     </section>
-    <section class="cardbs" >
-        <div class="cardbs__body" >
-            <div class="cardbs__body-left" >
-            <img loading="lazy" width="100%" src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_bs.webp" alt="...">
+    <section class="cardbs">
+        <div class="cardbs__body">
+            <div class="cardbs__body-left">
+                <img loading="lazy" width="100%" src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_bs.webp" alt="...">
             </div>
-            <div class="cardbs__body-right" >
+            <div class="cardbs__body-right">
                 <div class="cardbs__body-right-bs">
                     BS Võ Minh Nguyễn
                 </div>
@@ -101,7 +104,7 @@ $slides = [
                     Chuyên khoa ngoại
                 </div>
                 <div class="cardbs__body-right-ct">
-                   Từng công tác tại Bệnh viện Đa khoa Sainpaul Hà Nội <a href="#bs" >xem thêm...</a>
+                    Từng công tác tại Bệnh viện Đa khoa Sainpaul Hà Nội <a href="#bs">xem thêm...</a>
                 </div>
             </div>
         </div>
@@ -114,14 +117,15 @@ $slides = [
     <section class="sick">
         <div class="sick__container">
             <div class="sick__container-item sick__container-item-active ">Sùi Màu Gà </div>
-            <div class="sick__container-item">Bệnh Lậu</div>
-            <div class="sick__container-item">Mụn Rộp</div>
+            
         </div>
     </section>
     <section class="sick">
         <div class="sick__body ">
             <div class="sick__body-card">
-                <strong>Bệnh sùi mào gà</strong> là căn bệnh xã hội, lây lan qua hành vi quan hệ tình dục, bản chất là tình trạng tăng sinh của các tế bào biểu bì do lây nhiễm virus HPV (Human Papilloma Virus). Virus HPV bao gồm các tuýp 1, 2, 6, 11, 16, 18, 31, 33, và 35. Trong đó, bệnh ung thư cổ tử cung ở nữ giới có liên quan tới việc nhiễm HPV tuýp 16 và 18 trong thời gian dài. HPV là một phân tử khá nhỏ với đường kính = 55 nm, thuộc nhóm DNA. Có hơn 100 kiểu gen HPV, trong đó hơn 30 kiểu sẽ lây nhiễm và gây bệnh trên da và niêm mạc của bộ phận sinh dục, và gây ra các loại bệnh. Do bệnh có khả năng lây lan mạnh nên cần nhận biết triệu chứng để điều trị kịp thời.
+                <strong>Sùi mào gà,</strong> hay còn gọi là mụn cóc sinh dục, là một bệnh lây truyền qua đường tình dục, do virus HPV gây ra. <br><br>
+                Bệnh thường biểu hiện dưới dạng các nốt mụn cóc nhỏ, tổn thương trên da hoặc niêm mạc của bộ phận sinh dục, hậu môn, và đôi khi là vùng miệng.<br><br>
+                Virus HPV lây nhiễm chủ yếu qua quan hệ tình dục không an toàn, tiếp xúc trực tiếp với dịch tiết từ vết thương hở hoặc sử dụng chung đồ cá nhân với người mắc bệnh.
             </div>
         </div>
     </section>
@@ -270,7 +274,7 @@ $slides = [
             <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" aria-label="title" class="box">đặt lịch tại đây</a>
         </div>
     </section>
-    <section  class="information">
+    <section class="information">
         <h2 class="information__tile ">GIỚI THIỆU BÁC SĨ VÕ MINH NGUYỄN</h2>
     </section>
     <section class="information">
