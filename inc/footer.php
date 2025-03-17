@@ -299,29 +299,7 @@
 }).observe({type: 'largest-contentful-paint', buffered: true});
  </script>
 
-<script>
-    // Đợi 10 giây (10000ms) sau khi trang được tải
-    window.addEventListener('load', function() {
-        setTimeout(function() {
-            // Thêm thẻ <script> cho Google Tag Manager
-            const gtagScript = document.createElement('script');
-            gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-GG5K19W2ZT';
-            gtagScript.defer = true;
-            document.body.appendChild(gtagScript);
 
-            // Khởi tạo Google Analytics sau khi tải script
-            gtagScript.onload = function() {
-                window.dataLayer = window.dataLayer || [];
-
-                function gtag() {
-                    dataLayer.push(arguments);
-                }
-                gtag('js', new Date());
-                gtag('config', 'G-GG5K19W2ZT');
-            };
-        }, 10000); // 10000ms = 10 giây
-    });
-</script>
 
 <script >
    document.addEventListener('DOMContentLoaded', () => {
