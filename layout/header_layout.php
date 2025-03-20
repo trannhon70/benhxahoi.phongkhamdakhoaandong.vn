@@ -162,7 +162,7 @@
   <img 
    id="banner-image"
     class="banner-image" 
-    src="<?php echo $local ?>/images/banner/banner_mobile.avif" 
+    src="<?php echo $local ?>/images/banner/banner_mobile.webp" 
     alt="Banner" 
     width="360" 
     height="180"

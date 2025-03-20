@@ -137,6 +137,38 @@ setTitleAndScroll();
                             <h1 id="titleBaiViet" class="category__right-title">
                                 <?php echo $getPostDetail['tieu_de'] ?>
                             </h1>
+                            <div id="banner_mobile" style="padding: 0px 10px;">
+                                <section class="cardbs">
+                                    <div class="cardbs__body">
+                                        <div class="cardbs__body-left">
+                                            <img loading="lazy" width="100%"
+                                                src="<?php echo $local ?>/images/sui_mau_ga/icons/icon_bs.webp" alt="...">
+                                        </div>
+                                        <div class="cardbs__body-right">
+                                            <div class="cardbs__body-right-bs">
+                                                BS Võ Minh Nguyễn
+                                            </div>
+                                            <div class="cardbs__body-right-ck">
+                                                Chuyên khoa ngoại
+                                            </div>
+                                            <div class="cardbs__body-right-ct">
+                                                Từng công tác tại Bệnh viện Đa khoa Sainpaul Hà Nội <a href="<?php echo $local ?>/chuyen-de-sui-mao-ga.php">xem thêm...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="section__button">
+                                    <a aria-label="liên hệ" class="animated-button"
+                                        href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        tư vấn với bác sĩ tại đây</a>
+                                </section>
+
+
+                            </div>
                            
                             <div  style="background-color: #DBEAFD; padding: 6px; box-sizing: border-box; border-radius: 10px; display: flex; align-items: center; gap: 10px; font-size: 16px; color: red; margin-top: 10px; line-height: 21px; " >
                                 <img loading="lazy" width="30px" height="30px" src="<?php echo $local ?>/images/icons/icon_KM2025.gif" alt="...">

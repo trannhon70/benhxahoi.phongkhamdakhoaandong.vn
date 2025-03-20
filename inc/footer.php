@@ -104,7 +104,7 @@
      </div>
  </div>
 
- <?php include_once './layout/modalKhuyenMai.php' ?>
+ <!-- <?php include_once './layout/modalKhuyenMai.php' ?> -->
  <script language="javascript" src="https://npa.zoosnet.net/JS/LsJS.aspx?siteid=NPA46777247&float=1&lng=en"></script>
  <script>
      // Đợi 10 giây (10000ms) sau khi trang được tải
@@ -180,6 +180,7 @@
          const footer_mobileFix = document.getElementById('footer_mobileFix');
          const category__left = document.getElementById('category__left');
          const category_breadcrumb_mobile = document.getElementById('category__right-breadcrumb');
+         const banner_mobile = document.getElementById('banner_mobile');
 
          if (window.innerWidth <= 999) {
              header?.remove();
@@ -194,6 +195,7 @@
              if (footer__mobile) footer__mobile.classList.add('block');
              if (footer_mobileFix) footer_mobileFix.classList.add('block');
              if (category_breadcrumb_mobile) category_breadcrumb_mobile.classList.add('block');
+             if (banner_mobile) banner_mobile.classList.add('block');
          } else {
              headerMobile?.remove();
              vision__mobile?.remove();
@@ -201,6 +203,7 @@
              footer__mobile?.remove();
              footer_mobileFix?.remove();
              category_breadcrumb_mobile?.remove();
+             banner_mobile?.remove();
 
              if (header) header.style.display = 'block';
              if (vision) vision.style.display = 'block';
