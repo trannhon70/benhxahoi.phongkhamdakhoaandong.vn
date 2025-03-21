@@ -113,15 +113,13 @@
 </header>
 
 <header id="header__mobile" class="header__mobile">
+    
     <div class="header_mobile_container">
-        <div class="header_mobile_container-body">
-            <img loading="lazy" src="<?php echo $local ?>/images/background/header_mobile.gif" width="100%" height="50px" alt="...">
-            <div style="position: absolute; top: 0; left: 0; height: 50px; width: 100%; display: flex; ">
-                <div style="width: 50%; height: 50px;">
-                </div>
-                <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" style="width: 50%; height: 50px; display: block; "></a>
-            </div>
+        <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+        <div class="header_mobile">
+            <img src="<?php echo $local ?>/images/background/menu_header.gif" width="100%" height="50px" alt="...">
         </div>
+        </a>
     </div>
     <div class="header_mobile_bottom">
         <div class="header_mobile_bottom_left">

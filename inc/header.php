@@ -39,8 +39,8 @@ setcookie(
    
     header('Server-Timing: db;desc="Database";dur=' . $dbReadTotalTime);
 
-    $local ='http://localhost/_andong/benhxahoi.phongkhamdakhoaandong.vn'
-    // $local ='https://benhxahoi.phongkhamdakhoaandong.vn'
+    // $local ='http://localhost/_andong/benhxahoi.phongkhamdakhoaandong.vn'
+    $local ='https://benhxahoi.phongkhamdakhoaandong.vn'
     ?>
 <!DOCTYPE html>
 <html ⚡ lang="en">
@@ -124,9 +124,11 @@ setcookie(
     
     <link rel="icon" href="<?php echo $local ?>/images/icons/icon_logo.webp" type="image/x-icon">
     <link rel="preload" href="css/index.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
+    <link rel="preload" href="css/footer_mobile.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
     <link rel="preload" href="css/@media_header.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
     <noscript>
         <link rel="stylesheet" href="css/index.min.css">
+        <link rel="stylesheet" href="css/footer_mobile.min.css">
         <link rel="stylesheet" href="css/@media_header.min.css">
     </noscript>
     <script>
@@ -148,10 +150,7 @@ setcookie(
                         href: 'css/trang_chu_mobile.min.css',
                         id: 'mobile-1'
                     },
-                    {
-                        href: 'css/footer_mobile.min.css',
-                        id: 'mobile-1'
-                    },
+                  
 
                 ];
                 mobileLink.forEach(({
@@ -175,10 +174,7 @@ setcookie(
                         href: 'css/header.min.css',
                         id: 'desktop-0'
                     },
-                    {
-                        href: 'css/footer.min.css',
-                        id: 'desktop-1'
-                    },
+                    
 
                 ];
                 desktopLink.forEach(({

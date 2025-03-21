@@ -2,7 +2,7 @@
 define("DB_HOST", "localhost");
 define("DB_USER", "root");
 define("DB_PASS", "");
-define("DB_NAME", "namkhoa_phongkha");
+define("DB_NAME", "benhtri.andongclinic.vn");
 
 
 // define("DB_HOST", "localhost");
