@@ -113,15 +113,15 @@
 </header>
 
 <header id="header__mobile" class="header__mobile">
-    
+
     <div class="header_mobile_container">
         <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
-        <div class="header_mobile">
-            <img src="<?php echo $local ?>/images/background/menu_header.gif" width="100%" height="50px" alt="...">
-        </div>
+            <div class="header_mobile">
+                <img src="<?php echo $local ?>/images/background/menu_header.gif" width="100%" height="50px" alt="...">
+            </div>
         </a>
     </div>
-    <div class="header_mobile_bottom">
+    <!-- <div class="header_mobile_bottom">
         <div class="header_mobile_bottom_left">
             <a href="trang-chu.html">
                 <amp-img src="<?php echo $local ?>/images/logo/logo_mobile.webp" height="40" width="188" alt="..."></amp-img>
@@ -138,37 +138,38 @@
                 </div>
             </a>
         </div>
-    </div>
+    </div> -->
     <div class="header__mobile-baner">
         <!-- <img fetchpriority="high"  width="100%" height="auto" src="<?php echo  $local ?>/images/banner/banner_mobile.webp" alt=""> -->
         <!-- <img src="<?php echo  $local ?>/images/banner/banner_mobile.webp" alt="Banner" width="360" height="180" style="width: 100%; height: auto;"> -->
         <style>
-  .placeholder {
-    background-color: #f0f0f0;
-    width: 360px;
-    height: 180px;
-  }
-  .banner-image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-</style>
-<div class="placeholder" id="bannerPlaceholder"></div>
-<picture>
-  <!-- <source  id="banner-image1" srcset="<?php echo $local ?>/images/banner/banner_mobile.avif" type="image/avif"> -->
-  <img 
-   id="banner-image"
-    class="banner-image" 
-    src="<?php echo $local ?>/images/banner/banner_mobile.webp" 
-    alt="Banner" 
-    width="360" 
-    height="180"
-    style="opacity: 0; transition: opacity 3s;"
-    onload="document.getElementById('bannerPlaceholder').style.display='none'; this.style.opacity=1;">
-</picture>
+            .placeholder {
+                background-color: #f0f0f0;
+                width: 360px;
+                height: 180px;
+            }
+
+            .banner-image {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        </style>
+        <div class="placeholder" id="bannerPlaceholder"></div>
+        <picture>
+            <!-- <source  id="banner-image1" srcset="<?php echo $local ?>/images/banner/banner_mobile.avif" type="image/avif"> -->
+            <img
+                id="banner-image"
+                class="banner-image"
+                src="<?php echo $local ?>/images/banner/banner_mobile.webp"
+                alt="Banner"
+                width="360"
+                height="180"
+                style="opacity: 0; transition: opacity 3s;"
+                onload="document.getElementById('bannerPlaceholder').style.display='none'; this.style.opacity=1;">
+        </picture>
     </div>
-    <div class="header__mobile-list">
+    <!-- <div class="header__mobile-list">
         <ul>
             <li>
                 <img loading="lazy" width="40px" height="40px" src="<?php echo $local ?>/images/icons/icon_baoquydau.webp" alt="...">
@@ -191,20 +192,19 @@
                 <div>bệnh xã hội</div>
             </li>
         </ul>
-    </div>
+    </div> -->
 </header>
 
 <div id="toast-container"></div>
 
 <script>
-    const checkUrl =window.location.pathname.split('/')
+    const checkUrl = window.location.pathname.split('/')
     const fileName = checkUrl[checkUrl.length - 1];
-    if(fileName === 'khuyen-mai.php'){
-       document.querySelector('.header__bottom').style.display = 'none';
-      
-       
-       document.getElementById("banner-image").src = `<?php echo $local ?>/images/banner/bannerKM_mobile.webp`;
-       console.log(document.getElementById("banner-image").src, 'ádas');
+    if (fileName === 'khuyen-mai.php') {
+        document.querySelector('.header__bottom').style.display = 'none';
+
+
+        document.getElementById("banner-image").src = `<?php echo $local ?>/images/banner/bannerKM_mobile.webp`;
+        console.log(document.getElementById("banner-image").src, 'ádas');
     }
-    
 </script>
