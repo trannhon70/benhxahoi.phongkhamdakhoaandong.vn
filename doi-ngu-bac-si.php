@@ -11,7 +11,7 @@
 
             <section class="team">
                 <div class="team__title">
-                    Phòng Khám Đa Khoa An Đông luôn chú trọng tuyển dụng và đào tạo những bác sĩ giàu trình độ chuyên môn và tay nghề cao trong khám và điều trị bệnh để người bệnh yên tâm khi khám chữa bệnh tại đây.
+                    Phòng khám chuyên khoa An Đông luôn chú trọng tuyển dụng và đào tạo những bác sĩ giàu trình độ chuyên môn và tay nghề cao trong khám và điều trị bệnh để người bệnh yên tâm khi khám chữa bệnh tại đây.
                 </div>
                 <div class="team__container">
 

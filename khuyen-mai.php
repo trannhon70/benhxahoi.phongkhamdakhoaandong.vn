@@ -16,7 +16,7 @@
                         Theo khuyến cáo của các chuyên gia y tế, nam giới độ tuổi sinh sản nên đi khám định kỳ tối thiểu 6 tháng 1 lần, đặc biệt là trước khi sinh con. Việc chủ quan, phát hiện bệnh khi đã muộn có thể dẫn tới những biến chứng đáng tiếc.
                         <br><br>
 
-                        Thấu hiểu tầm quan trọng của việc khám sức khỏe sinh sản nam giới, Phòng khám Đa khoa An Đông đã triển khai chương trình ưu đãi “Sức Khỏe Như Ý – Gói Khám Hợp Lý” có đầy đủ các danh mục cần thiết và phí thăm khám được điều chỉnh phù hợp với nhiều đối tượng.
+                        Thấu hiểu tầm quan trọng của việc khám sức khỏe sinh sản nam giới, Phòng khám chuyên khoa An Đông đã triển khai chương trình ưu đãi “Sức Khỏe Như Ý – Gói Khám Hợp Lý” có đầy đủ các danh mục cần thiết và phí thăm khám được điều chỉnh phù hợp với nhiều đối tượng.
                     </div>
                     <div class="endow__container-img">
                         <img loading="lazy" src="<?php echo $local ?>/images/khuyen_mai/icon_uudai.webp" alt="...">

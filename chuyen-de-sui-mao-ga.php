@@ -14,8 +14,8 @@ $local = 'https://benhxahoi.phongkhamdakhoaandong.vn';
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <meta name="description"
-        content="Phòng khám đa khoa chuyên điều trị bệnh nam khoa, bệnh xã hội, da liễu, hậu môn - trực tràng uy tính tại thành phố Hồ Chí Minh">
-    <title>Phòng khám đa khoa</title>
+        content="Phòng khám chuyên khoa chuyên điều trị bệnh nam khoa, bệnh xã hội, da liễu, hậu môn - trực tràng uy tính tại thành phố Hồ Chí Minh">
+    <title>Phòng khám chuyên khoa</title>
     <link rel="icon" href="<?php echo $local ?>/images/icons/icon_logo.webp" type="image/x-icon">
     <link rel="preload" href="css/index.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>
     <link rel="preload" href="css/chuyen-de-sui-mau-ga.min.css" as="style" onload='this.onload=null,this.rel="stylesheet"'>

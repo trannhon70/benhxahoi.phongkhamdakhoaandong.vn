@@ -16,7 +16,7 @@
                     <img width="75px" src="<?php echo $local ?>/images/logo/logo_footer.webp" alt="...">
                     <div>
                         <h4>AN ĐÔNG</h4>
-                        <h5>phòng khám đa khoa</h5>
+                        <h5>Phòng khám chuyên khoa</h5>
                     </div>
                 </div>
                 <hr>
@@ -83,7 +83,7 @@
         </li>
     </ul>
 </section>
-<section id="copy">Copyright © <?php echo date("Y") ?> Phòng khám đa khoa An Đông</section>
+<section id="copy">Copyright © <?php echo date("Y") ?> Phòng khám chuyên khoa An Đông</section>
 <div class="footer_list_icon">
     <div><a class="footer_icon_mess" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
             <amp-img style="margin-left:3px" src="<?php echo $local ?>/images/icons_chat/icon_message.webp"
