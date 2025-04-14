@@ -39,8 +39,8 @@ setcookie(
    
     header('Server-Timing: db;desc="Database";dur=' . $dbReadTotalTime);
 
-    // $local ='http://localhost/_andong/benhxahoi.phongkhamdakhoaandong.vn'
-    $local ='https://benhxahoi.phongkhamdakhoaandong.vn'
+    $local ='http://localhost/_andong/benhxahoi.phongkhamdakhoaandong.vn'
+    // $local ='https://benhxahoi.phongkhamdakhoaandong.vn'
     ?>
 <!DOCTYPE html>
 <html ⚡ lang="en">

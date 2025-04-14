@@ -489,6 +489,8 @@ setTitleAndScroll();
                 content = content.replace(phoneRegex, '0968 063 109, 028 7777 9888'); 
                 const addressRegex = /360,\sAn\sDương\sVương,\sP\.4,\sQ\.5,\sTPHCM\./g;
                 content = content.replace(addressRegex, 'An Dương Vương, P.4, Q.5, TPHCM.');
+                const multiTagRegex = /Đa\sKhoa/gi;
+                content = content.replace(multiTagRegex, 'Chuyên khoa');
                 bodyPlaceholder.innerHTML = content;
                 bodyPlaceholder.classList.add("loaded");
                 observer.unobserve(bodyPlaceholder);
