@@ -104,7 +104,7 @@ $slides = [
                     Chuyên khoa ngoại
                 </div>
                 <div class="cardbs__body-right-ct">
-                    Từng công tác tại Bệnh viện Đa khoa Sainpaul Hà Nội <a href="#bs">xem thêm...</a>
+                    Từng công tác tại Bệnh viện Chuyên khoa Sainpaul Hà Nội <a href="#bs">xem thêm...</a>
                 </div>
             </div>
         </div>
@@ -304,7 +304,7 @@ $slides = [
                     </strong>
                     <div class="information__body-right-text">
                         <strong> - CÔNG TÁC TẠI KHỐI NGOẠI</strong>
-                        <span>tại Bệnh viện Đa khoa Sainpaul Hà Nội: </span>
+                        <span>tại Bệnh viện Chuyên khoa Sainpaul Hà Nội: </span>
                         <div class="information__body-right-text-li">
                             . Phẫu thuật thần kinh
                         </div>
@@ -318,7 +318,7 @@ $slides = [
                             <strong> - CHUYÊN GIA Y TẾ TẠI NƯỚC NGOÀI</strong>
                         </div>
                         <div>
-                            <strong>- TRƯỞNG KHOA NGOẠI BỆNH VIỆN ĐA KHOA TÂM TRÍ SÀI GÒN</strong>
+                            <strong>- TRƯỞNG KHOA NGOẠI BỆNH VIỆN Chuyên khoa TÂM TRÍ SÀI GÒN</strong>
                         </div>
                         <div>
                             <strong> - CHUYÊN MÔN ĐIỀU TRỊ:</strong>

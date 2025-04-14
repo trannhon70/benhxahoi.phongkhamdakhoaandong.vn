@@ -152,7 +152,7 @@ setTitleAndScroll();
                                                 Chuyên khoa ngoại
                                             </div>
                                             <div class="cardbs__body-right-ct">
-                                                Từng công tác tại Bệnh viện Đa khoa Sainpaul Hà Nội <a href="<?php echo $local ?>/chuyen-de-sui-mao-ga.php">xem thêm...</a>
+                                                Từng công tác tại Bệnh viện Chuyên khoa Sainpaul Hà Nội <a href="<?php echo $local ?>/chuyen-de-sui-mao-ga.php">xem thêm...</a>
                                             </div>
                                         </div>
                                     </div>

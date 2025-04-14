@@ -17,14 +17,14 @@
                         <img width="100%" height="auto" src="<?php echo $local ?>/images/icons/icon_chat.webp" alt="chat top">
                         <div class="vision__right-top-body">
                             <strong>TẦM NHÌN</strong>
-                            <div>  Đa khoa An Đông đã được thành lập và định hướng phát triển theo tiêu chuẩn y khoa quốc tế, tiện ích và nhân văn. Từ đó, trở thành điểm đến tin cậy của nhiều bệnh nhân tại thành phố cũng như các tỉnh lân cận.  </div>
+                            <div>  Chuyên khoa An Đông đã được thành lập và định hướng phát triển theo tiêu chuẩn y khoa quốc tế, tiện ích và nhân văn. Từ đó, trở thành điểm đến tin cậy của nhiều bệnh nhân tại thành phố cũng như các tỉnh lân cận.  </div>
                         </div>
                     </div>
                     <div class="vision__right-bottom">
                         <img width="100%" height="auto" src="<?php echo $local ?>/images/icons/icon_chat1.webp" alt="chat top">
                         <div class="vision__right-bottom-body">
                             <strong>SỨ MỆNH</strong>
-                            <div>   Sứ mệnh vì một cộng đồng mạnh khỏe, vui sống và an nhiên. Đa Khoa An Đông luôn nỗ lực để xây dựng một thương hiệu chăm sóc sức khỏe với hàm lượng tri thức, khoa học và công nghệ hiện đại. Mỗi dịch vụ y tế đều hướng tới tính tiện ích, hiệu quả và có ý nghĩa trong cuộc sống con người. </div>
+                            <div>   Sứ mệnh vì một cộng đồng mạnh khỏe, vui sống và an nhiên. Chuyên khoa An Đông luôn nỗ lực để xây dựng một thương hiệu chăm sóc sức khỏe với hàm lượng tri thức, khoa học và công nghệ hiện đại. Mỗi dịch vụ y tế đều hướng tới tính tiện ích, hiệu quả và có ý nghĩa trong cuộc sống con người. </div>
                             <div class="vision__right-bottom-body-img">
                                 <img src="<?php echo $local ?>/images/icons/icon_heat.webp" alt="...">
                             </div>
@@ -36,8 +36,8 @@
                 <div class="vision__mobile-body" >
                     <div class="vision__mobile-body-title">Tầm Nhìn & Sứ mệnh</div>
                     <img width="100%" height="auto" src="<?php echo $local ?>/images/icons/icon_line.webp" alt="line">
-                    <p>Đa khoa An Đông – 360, An Dương Vương, P.4, Q.5, TPHCM đã được thành lập và định hướng phát triển theo tiêu chuẩn y khoa quốc tế, tiện ích và nhân văn. Từ đó, trở thành điểm đến tin cậy của nhiều bệnh nhân tại thành phố cũng như các tỉnh lân cận.
-                    Sứ mệnh vì một cộng đồng mạnh khỏe, vui sống và an nhiên. Đa Khoa An Đông luôn nỗ lực để xây dựng một thương hiệu chăm sóc sức khỏe với hàm lượng tri thức, khoa học và công nghệ hiện đại. Mỗi dịch vụ y tế đều hướng tới tính tiện ích, hiệu quả và có ý nghĩa trong cuộc sống con người.</p>
+                    <p>Chuyên khoa An Đông – 360, An Dương Vương, P.4, Q.5, TPHCM đã được thành lập và định hướng phát triển theo tiêu chuẩn y khoa quốc tế, tiện ích và nhân văn. Từ đó, trở thành điểm đến tin cậy của nhiều bệnh nhân tại thành phố cũng như các tỉnh lân cận.
+                    Sứ mệnh vì một cộng đồng mạnh khỏe, vui sống và an nhiên. Chuyên khoa An Đông luôn nỗ lực để xây dựng một thương hiệu chăm sóc sức khỏe với hàm lượng tri thức, khoa học và công nghệ hiện đại. Mỗi dịch vụ y tế đều hướng tới tính tiện ích, hiệu quả và có ý nghĩa trong cuộc sống con người.</p>
                 </div>
                 <img  width="100%" height="auto" src="<?php echo $local ?>/images/banner/banner-small.webp" alt="...">
             </div>
@@ -231,7 +231,7 @@
                                 <div class="customer_row-right-list-item ">
                                     <img width="100%" height="auto" src="<?php echo $local ?>/images/users/user_3.webp" alt="...">
                                     <div class="customer_row-right-list-item-body">
-                                        <p>“Mình bị xuất tinh sớm, bạn bè giới thiệu đến Đa khoa An Đông. Tại đây, các bác sĩ vô cùng có tâm với nghề, nên mình cũng thoải mái chia sẻ những vấn đề mình đang gặp phải. Sau điều trị, mình cảm thấy sức khỏe sinh lý của mình cải thiện hơn so với ngày xưa”</p>
+                                        <p>“Mình bị xuất tinh sớm, bạn bè giới thiệu đến Chuyên khoa An Đông. Tại đây, các bác sĩ vô cùng có tâm với nghề, nên mình cũng thoải mái chia sẻ những vấn đề mình đang gặp phải. Sau điều trị, mình cảm thấy sức khỏe sinh lý của mình cải thiện hơn so với ngày xưa”</p>
                                         <div>Đức Trí (29 tuổi)</div>
                                     </div>
                                 </div>
