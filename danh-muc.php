@@ -19,6 +19,11 @@ if (isset($postDetail) && isset($postDetail['name_khoa'])) {
     }
 }
 // var_dump($getPostDetail);
+if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
+    http_response_code(404);
+    include '404.html'; // hoặc '404.php'
+    exit();
+}
 function setTitleAndScroll()
 {
     global $getPostDetail; // Đảm bảo truy cập biến toàn cục

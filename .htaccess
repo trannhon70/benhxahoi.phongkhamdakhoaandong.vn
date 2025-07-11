@@ -1,5 +1,15 @@
 RewriteEngine On
 
+# Nếu file hoặc thư mục tồn tại thì không rewrite
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# ❗ Bỏ qua rewrite cho 404.html (fix lỗi thiếu đích)
+RewriteRule ^404\.html$ - [L]
+
+# Rewrite for trang-chu.html → index.php
+RewriteRule ^trang-chu\.html$ index.php [L]
+
 # Rewrite for trang-chu.html
 RewriteRule ^trang-chu\.html$ index.php [L]
 

@@ -56,8 +56,8 @@ class post
 
     // Thực hiện truy vấn nếu các trường không rỗng
     if ($tieu_de && $id_benh && $content) {
-      $query = "INSERT INTO admin_baiviet (title, slug, content, id_benh, id_khoa, created_at, tieu_de, keyword, descriptions, user_id, img,view)
-                  VALUES ('$title', '$slug', '$content', '$id_benh', '$id_khoa', '$created_at', '$tieu_de', '$keyword', '$description', '" . Session::get('id') . "', '$img', '0')";
+      $query = "INSERT INTO admin_baiviet (title, slug, content, id_benh, id_khoa, created_at, tieu_de, keyword, descriptions, user_id, img,view,hiden)
+                  VALUES ('$title', '$slug', '$content', '$id_benh', '$id_khoa', '$created_at', '$tieu_de', '$keyword', '$description', '" . Session::get('id') . "', '$img', '0', '0')";
       $result = $this->db->insert($query);
 
       return $result
@@ -218,7 +218,7 @@ $query = "SELECT COUNT(*) AS total FROM admin_baiviet WHERE id_benh = ' $id_benh
   public function getBaiViet_bySlug($id)
   {
     $id = mysqli_real_escape_string($this->db->link, $id);
-    $query = "SELECT baiviet.id, baiviet.title, baiviet.slug, baiviet.tieu_de, baiviet.id_benh,baiviet.id_khoa, baiviet.content,baiviet.img,baiviet.descriptions,baiviet.keyword,
+    $query = "SELECT baiviet.id, baiviet.title, baiviet.slug, baiviet.tieu_de, baiviet.id_benh,baiviet.id_khoa, baiviet.content,baiviet.img,baiviet.descriptions,baiviet.keyword, baiviet.hiden,
     benh.name AS name_benh, 
     benh.id_khoa AS id_khoa, 
     khoa.name AS name_khoa ,
@@ -365,7 +365,7 @@ $query = "SELECT COUNT(*) AS total FROM admin_baiviet WHERE id_benh = ' $id_benh
     if($resultBenh){
       $benh = $resultBenh->fetch_assoc();
       $id = $benh['id'];
-      $query = "SELECT baiviet.id, baiviet.title, baiviet.slug, baiviet.tieu_de, baiviet.id_benh,baiviet.id_khoa, baiviet.content, baiviet.img,baiviet.descriptions,baiviet.keyword,
+      $query = "SELECT baiviet.id, baiviet.title, baiviet.slug, baiviet.tieu_de, baiviet.id_benh,baiviet.id_khoa, baiviet.content, baiviet.img,baiviet.descriptions,baiviet.keyword, baiviet.hiden,
       benh.name AS name_benh, 
       benh.id_khoa AS id_khoa, 
       khoa.name AS name_khoa ,
@@ -382,6 +382,19 @@ $query = "SELECT COUNT(*) AS total FROM admin_baiviet WHERE id_benh = ' $id_benh
       }
     }
    
+  }
+    public function updateHiden($data)
+  {
+   
+    $id = mysqli_real_escape_string($this->db->link, $data['id']);
+    $hiden = mysqli_real_escape_string($this->db->link, $data['hiden']);
+    $query = "UPDATE admin_baiviet SET hiden = '$hiden' WHERE id = '$id'";
+    $result = $this->db->update($query);
+    if ($result) {
+      return array('status' => 'success', 'message' => 'Cập nhật bài viết thành công!');
+    } else {
+      return array('status' => 'error', 'message' => 'Cập nhật bài viết thất bại!');
+    }
   }
 }
 

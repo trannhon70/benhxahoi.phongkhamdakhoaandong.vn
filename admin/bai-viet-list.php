@@ -27,6 +27,26 @@ if (isset($_GET['delete'])) {
         exit();
     }
 }
+if (isset($_GET['show'])) {
+    $data = [
+        'id' => $_GET['show'],
+        'hiden' => "0",
+    ];
+    $message = $bai_viet->updateHiden($data);
+    if ($message['status'] == 'success') {
+        $_SESSION['message'] = $message;
+    }
+}
+if (isset($_GET['hiden'])) {
+    $data = [
+        'id' => $_GET['hiden'],
+        'hiden' => "1",
+    ];
+    $message = $bai_viet->updateHiden($data);
+    if ($message['status'] == 'success') {
+        $_SESSION['message'] = $message;
+    }
+}
 if (isset($_SESSION['message'])) {
     $message = $_SESSION['message'];
     unset($_SESSION['message']);
@@ -61,7 +81,36 @@ $total_pages = ceil($total_articles / $limit);
         text-decoration: none;
         color: #01969a;
     }
+
+    .action .action_hiden {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(255, 0, 0);
+        padding: 3px 5px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .action .action_show {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(2, 80, 6);
+        padding: 3px 5px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
 </style>
+<?php
+    // Hàm loại bỏ tham số khỏi query string
+    function buildUrlWithout($paramToRemove)
+    {
+        $query = $_GET;
+        unset($query['show']);
+        unset($query['hiden']);
+        // Xây lại URL query string
+        return $_SERVER['PHP_SELF'] . '?' . http_build_query($query);
+    }
+    ?>
 
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -123,6 +172,11 @@ $total_pages = ceil($total_articles / $limit);
                         <td><?php echo $result['ten_benh']; ?></td>
                         <td><?php echo $result['created_at']; ?></td>
                         <td class="action" style="display: flex; gap: 25px; align-items: center; justify-content: center; height: 100%; ">
+                            <?php if ($result['hiden'] === "0") { ?>
+                                    <a class="action_show" href="<?php echo buildUrlWithout('hiden') . '&hiden=' . $result['id']; ?>">Hiện</a>
+                                <?php } else { ?>
+                                    <a class="action_hiden" href="<?php echo buildUrlWithout('show') . '&show=' . $result['id']; ?>">Ẩn</a>
+                                <?php } ?>
                             <a class="action_edit" href="bai-viet-edit.php?edit=<?php echo $result['id'] ?>"><i style="font-size: 25px;" class="lni lni-pencil"></i></a>
                             <a onclick="return confirm('Bạn có chắc là bạn muốn xóa bài viết <?php echo $result['tieu_de']; ?>')" class="action_delete" href="?delete=<?php echo $result['id'] ?>"><i style="font-size: 25px;" class="lni lni-trash-can"></i></a>
                             <a class="action_view" href="<?php echo $local ?>/<?php echo $result['slug'] ?>.html"><i style="font-size: 25px;" class="lni lni-eye"></i></a>
